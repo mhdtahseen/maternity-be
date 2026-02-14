@@ -1,0 +1,1 @@
+{"version":3,"file":"clamav.adapter.js","sourceRoot":"","sources":["../../../src/integrations/antivirus/clamav.adapter.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2CAA4C;AAGrC,IAAM,aAAa,GAAnB,MAAM,aAAa;IACxB,KAAK,CAAC,UAAU,CAAC,OAAe,EAAE,UAAkB;QAElD,OAAO,EAAE,KAAK,EAAE,IAAI,EAAE,CAAC;IACzB,CAAC;CACF,CAAA;AALY,sCAAa;wBAAb,aAAa;IADzB,IAAA,mBAAU,GAAE;GACA,aAAa,CAKzB"}

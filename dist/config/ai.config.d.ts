@@ -1,0 +1,30 @@
+declare const _default: (() => {
+    openRouterApiKey: string;
+    openRouterModel: string;
+    openRouterBaseUrl: string;
+    openRouterHttpReferer: string;
+    openRouterXTitle: string;
+    qwenApiKey: string;
+    qwenVisionModel: string;
+    ocrProvider: string;
+    ocrBackupProvider: string;
+    ocrCompareMode: boolean;
+    qwenMaxPages: number;
+    qwenTimeoutMs: number;
+    ocrEndpoint: string;
+}) & import("@nestjs/config").ConfigFactoryKeyHost<{
+    openRouterApiKey: string;
+    openRouterModel: string;
+    openRouterBaseUrl: string;
+    openRouterHttpReferer: string;
+    openRouterXTitle: string;
+    qwenApiKey: string;
+    qwenVisionModel: string;
+    ocrProvider: string;
+    ocrBackupProvider: string;
+    ocrCompareMode: boolean;
+    qwenMaxPages: number;
+    qwenTimeoutMs: number;
+    ocrEndpoint: string;
+}>;
+export default _default;
