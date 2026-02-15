@@ -39,6 +39,17 @@ export class DocumentLlmProcessor extends WorkerHost {
     try {
       const extraction = await this.openRouterClient.analyzeMedicalText(document.ocrText);
 
+      console.log('=== TRINITY LLM RESPONSE ===');
+      console.log('Document ID:', documentId);
+      console.log('Extraction:', JSON.stringify(extraction, null, 2));
+      console.log('Tags from Trinity:', extraction.tags);
+      console.log('Authenticity Score:', extraction.authenticity);
+      console.log('Doctor:', extraction.doctor);
+      console.log('Hospital:', extraction.hospital);
+      console.log('Document Date:', extraction.documentDate);
+      console.log('Pregnancy Week:', extraction.pregnancyWeek);
+      console.log('===========================\n');
+
       await this.persistQueue.add(
         JOB_NAMES.PERSIST_MEDICAL_ANALYSIS,
         { documentId, extraction },
